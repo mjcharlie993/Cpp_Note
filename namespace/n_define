@@ -1,0 +1,19 @@
+namespace:为防止名字冲突提供了更加可控的机制
+关键字namespace + 命名空间的名字 + ｛主要包括：类、变量、函数、模版和其他命名空间｝
+不同命名空间内可以有相同名字的成员
+不能定义在函数和类内
+
+namespace cplusplus_primer {
+    class Sales_data { /*...*/};
+    Sales_data operator+(const Sales_data&, const Sales_data&);
+    class Query { /*...*/};
+    class Query_base { /*...*/};
+}
+命名空间中的名字可以被该命名空间内的其他成员直接访问，也可以被这些成员内嵌作用域中的任何单位访问。
+该命名空间之外的代码必须明确指出所用的名字属于哪个命名空间
+
+cplusplus_primer::Query q = cplusplus_primer::Query("Hello");
+
+命名空间可以是不连续的
+
+
