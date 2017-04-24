@@ -1,0 +1,22 @@
+char* strchr(const char* s, char c) {
+    find the first occur position of s
+    return first occur position pointer.
+    if the c is not in s
+    return nullptr
+}
+
+
+unsigned int strlen(char* s) {
+    return s's length.
+    NOT INCLUDING NULL.
+    sizeof() is return s's capacity.
+}
+
+
+
+
+int strcmp(const char* s1, const char* s2) {
+    if s1 < s2, return -
+    if s1 = s2, return 0
+    if s1 > s2, return +
+}
